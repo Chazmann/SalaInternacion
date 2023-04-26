@@ -224,3 +224,18 @@ table,
         overflow-x: hidden;
     }
 }
+
+@media screen and (orientation:portrait) {
+    header h3{
+        font-size: 10pt;
+    }
+    header h5{
+        font-size: 8pt;
+    }
+    #camas{flex-direction: row;
+    flex-wrap: nowrap; }
+
+    .camas{flex: 1 0 auto;
+    min-width: none!important;}
+    
+}

@@ -1,5 +1,6 @@
 #camas {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
@@ -27,8 +28,8 @@
     background-color: rgb(255, 255, 255);
     color: grey;
     /* height: 300px; */
-    flex: 0 0 24%;
-    min-width: 220px;
+    flex: 0 0 23%;
+    min-width: 200px;
     border-radius: 7px;
     overflow: hidden;
     box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.241);
@@ -87,4 +88,17 @@
         line-height: 30px;
         color: white !important;
     }
+}
+
+@media screen and (orientation:portrait) {
+    header h3{
+        font-size: 10pt;
+    }
+    header h5{
+        font-size: 8pt;
+    }
+.cama{
+     min-width: 50%!important;
+    }
+    
 }
