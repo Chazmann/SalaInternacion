@@ -293,8 +293,12 @@ table,
 
 @media screen and (orientation:portrait) {
     body {
-
+        padding-top: 50px;
         overflow-x: hidden;
+    }
+
+    header {
+        height: 50px;
     }
 
     header h3 {
@@ -313,12 +317,17 @@ table,
     .ubicacion {
         flex-direction: column;
     }
-.filtros{padding: 10px;}
+
+    .filtros {
+        padding: 10px;
+    }
+
     .estadocamas {
         flex-wrap: wrap;
+        justify-content: space-evenly;
         width: 100%;
         font-size: 9pt;
-        gap:5px
+        gap: 5px
     }
 
     .cama {
