@@ -290,7 +290,7 @@ table,
 
 @media screen and (orientation: portrait) {
     body {
-        background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
         overflow-x: hidden;
     }
 }
@@ -308,7 +308,8 @@ table,
         flex-direction: row;
         flex-wrap: nowrap;
     }
-
+    .ubicacion{flex-direction: column;}
+.estadocamas{flex-wrap: wrap; width: 100%;}
     .camas {
         flex: 1 0 auto;
         min-width: none !important;
