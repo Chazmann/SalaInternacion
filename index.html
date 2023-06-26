@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cama.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cama.css">
     <!-- <link rel="stylesheet" href="css/gradient-box.scss"> -->
     <title>Control de Internación</title>
 </head>
+
 <body>
 
     <header class="main-color flex spb">
@@ -21,9 +24,76 @@
             <h5>Dr. Joaquín Álvarez</h5>|<h3>SALA A002</h3>
         </div>
     </header>
+    <nav class="filtros">
+        <h2>Internaciones </h2>
+        <hr>
 
+        <section id="filtrocamas" class="flex col gap20">
 
-    <section id="camas"></section>
+            <form action="#" class="flex col gap20">
+                <div class="ubicacion flex spb gap20">
+                    <div class="selection">
+                        <label for="location">
+                            <h4>Ubicación: </h4>
+                        </label>
+                        <select name="location" id="location" required>
+                            <option value="0" disabled selected>Seleccione una ubicación...</option>
+                            <option value="1">Clinica Adventista Belgrano</option>
+                            <option value="2">Clinica Fleni</option>
+                            <option value="3">Hospital Universitario Austral</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <label for="sala">
+                            <h4>Sala: </h4>
+                        </label>
+                        <select name="sala" id="sala" required>
+                            <option value="0" disabled selected>Seleccione una sala...</option>
+                            <option value="1">Sala 101 - 1er Piso</option>
+                            <option value="2">Sala 102 - 1er Piso</option>
+                            <option value="3">Sala 103 - 1er Piso</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <label for="area">
+                            <h4>Área: </h4>
+                        </label>
+                        <select name="area" id="area" required>
+                            <option value="0" disabled selected>Seleccione una ubicación...</option>
+                            <option value="1">Clinica Adventista Belgrano</option>
+                            <option value="2">Clinica Fleni</option>
+                            <option value="3">Hospital Universitario Austral</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="estadocamas flex gap20">
+                    <h4>Camas: </h4>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Todas</span>
+                    </label>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Libres</span>
+                    </label>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Ocupadas</span>
+                    </label>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Por Ocuparse</span>
+                    </label>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Bloqueada</span>
+                    </label>
+                </div>
+            </form>
+        </section>
+    </nav>
+
+    <main id="camas"></main>
 
     <!-- <div class="tabla">
         <table id="info">
@@ -42,4 +112,5 @@
     <script defer src="js/listar.js"></script>
     <script defer src="js/internados.js"></script>
 </body>
+
 </html>
