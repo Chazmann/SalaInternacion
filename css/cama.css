@@ -94,6 +94,9 @@
 }
 
 @media screen and (orientation:portrait) {
+    header{
+        height: 50px;
+    }
     header h3 {
         font-size: 10pt;
     }
