@@ -105,7 +105,8 @@ header {
 .selection select,
 .selection select option {
     font-family: var(--font);
-    font-size: 14pt;}
+    font-size: 14pt;
+}
 
 .selection select {
     display: inline-block;
@@ -122,7 +123,8 @@ header {
     transition: all 0.25s ease;
 }
 
-.estadocamas label, .report {
+.estadocamas label,
+.report {
     background-color: rgba(230, 230, 230, 0.527);
     padding: 0 14px 0 10px;
     border-radius: 30px;
@@ -138,7 +140,8 @@ header {
     color: white;
 }
 
-.estadocamas label:hover, .report:hover {
+.estadocamas label:hover,
+.report:hover {
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.178);
 }
 
@@ -288,14 +291,12 @@ table,
 }
 
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation:portrait) {
     body {
 
         overflow-x: hidden;
     }
-}
 
-@media screen and (orientation:portrait) {
     header h3 {
         font-size: 10pt;
     }
@@ -308,10 +309,18 @@ table,
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    .ubicacion{flex-direction: column;}
-.estadocamas{flex-wrap: wrap; width: 100%;}
-    .camas {
-        flex: 1 0 auto;
+
+    .ubicacion {
+        flex-direction: column;
+    }
+
+    .estadocamas {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cama {
+        flex: 1;
         min-width: none !important;
     }
 
