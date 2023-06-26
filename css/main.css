@@ -15,6 +15,11 @@ body {
     padding-top: 80px;
 }
 
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 header {
     font-family: var(--font);
     background-color: #5b162d;
@@ -59,7 +64,11 @@ header {
 .spb {
     justify-content: space-between;
 }
-.col{flex-direction: column;}
+
+.col {
+    flex-direction: column;
+}
+
 .pdx {
     padding: 10px 4%;
 }
@@ -70,21 +79,50 @@ header {
     padding: 10px 50px;
     color: black;
     line-height: 32px;
-    
+
 }
-.ubicacion{
+
+.ubicacion {
     display: flex;
 }
-.selection{
+
+.selection {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
 }
 
 .gap20 {
     gap: 20px
 }
 
-.estadocamas label {
+/* .selection select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+} */
+
+.selection select,
+.selection select option {
+    font-family: var(--font);
+    font-size: 14pt;}
+
+.selection select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 5px 5px 7px;
+    height: 42px;
+    background: #f0f0f0;
+    color: #3b3b3b;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.estadocamas label, .report {
     background-color: rgba(230, 230, 230, 0.527);
     padding: 0 14px 0 10px;
     border-radius: 30px;
@@ -92,14 +130,15 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 
-.camas label:active {
+.estadocamas label:active {
     background-color: #7f76dd;
     color: white;
 }
 
-.camas label:hover {
+.estadocamas label:hover, .report:hover {
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.178);
 }
 
