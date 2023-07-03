@@ -289,7 +289,7 @@ table,
 .male {
     background: linear-gradient(90deg, #4033d5 0%, #40a7b6 100%);
 }
-
+.gray{ color:gray}
 
 @media screen and (orientation:portrait) {
     body {
