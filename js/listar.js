@@ -10,7 +10,7 @@ function crearsex(sexo) {
 }
 
 function seguimiento(active) {
-    if (active == true) {
+    if (active === true) {
         return 'visibility'
     } else if (active == false) {
         return 'visibility_off'
